@@ -32,7 +32,7 @@ const BoxElement: NextPage<BoxElementType> = ({
     players
 }) => {
     function backgroundFunc(value: backgroundType): backgroundReturnType{
-        var color: backgroundReturnType = 'home';
+        var color: backgroundReturnType = 'blue';
         color = value === "home" ? "blue" : color;
         color = value === "work" ? "red" : color;
         color = value === "agricultura" ? "green" : color;
