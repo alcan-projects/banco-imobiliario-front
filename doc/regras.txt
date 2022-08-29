@@ -1,0 +1,9 @@
+O jogador pode escolher por 3 vezes no máximo a opção de pular sua vez
+
+1a. Quanto um jogador adiversário cai na tua propriedade, ele deve fazer algum
+coisa que de dinheiro ao proprietário
+
+1b. Quanto o proprietário cai no próprio local, ele deve pagar muta de algum
+coisa ou algo parecido
+
+2. Em casas tem quatro lote, onde a pessoa pode comprar o lote e contruir uma casa

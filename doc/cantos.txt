@@ -1,0 +1,4 @@
+Top-left: Férias => Fique 2 rodadas sem movimentos e perda um dinheiro
+Top-rigth: Preso => Pague a muta ou fique 2 rodadas sem jogar
+botton-left: Aposentadoria => A cada rodada receba um salário mínimo
+botton-riigth: Início e prêmios surpresa

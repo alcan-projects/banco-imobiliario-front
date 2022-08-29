@@ -1,0 +1,47 @@
+# 32 lugares - OK
+
+0. Sorte/azar [4 lugares]:
+
+0. Governo[1 lugar - neutro]:
+- Sem energia
+
+1. Banco [2 lugares]:
+ - Energia: 0.2%
+
+2. Ações, renda passiva [boque de ações livres]:
+- Sem energia
+
+3. Empresa Imobiliária [2 lugares - espande]:
+ - Casas tem que dar 3% do valor recebido quando alguém cai.
+ - Energia: 0.2%
+
+4. Casas [8 lugares - 4 cada e espande]:
+- Todas as vezes que alguém cai tem que pagar 10% do valor do imóvel.
+- Energia: 0.1%
+
+4. Energia [2 lugar - espande]:
+ - Todos os imóveis físicos tem que pagar um valor de X do valor do imóvel a cada 
+jogada do comprador.
+
+5. Parque [2 lugares - espande]:
+ - Todas as vezes que alguém cai tem que pagar 14% do valor do imóvel.
+ - Valor da energia: 0.2%
+
+6. hospital [2 lugares - espande]:
+ - Todas as vezes que alguém cai tem que pagar 28% do valor do imóvel.
+ - Valor da energia: 1%
+
+7. mercado [4 lugares - espande]:
+ - Todas as vezes que alguém cai tem que pagar 25% do valor do imóvel.
+ - Valor da energia: 0.8%
+
+8. produção de alimento [2 lugares - espande]: 
+ - 
+
+9. Instituições sem fins lucrativos [2 - espande]
+
+10. Lugares turisticos [2 - 4 cada e espande]
+
+11. Escola particular [2 - 2 cada e espande]
+
+12. Tecnologia [1 - 4 lugar cada e espande]
