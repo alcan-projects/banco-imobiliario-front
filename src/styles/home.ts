@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const BaseStyled = styled('div')`
     display: flex;
+    justify-content: center;
     background-color: #000;
     div.primary {
         display: flex;
@@ -12,32 +13,40 @@ export const BaseStyled = styled('div')`
         background-color: #f9f9f9;
         section {
             display: flex;
-            &:nth-child(1), &:nth-child(5){
+            width: 100%;
+            height: 20%;
+            justify-content: space-between;
+            div{
                 width: 100%;
-                height: 15.384615385%;
-                justify-content: space-between;
-                div{
-                    width: 7.692307693%;
+                height: 100%;
+                &:nth-child(1), &:nth-child(14){
+                    width: 180% !important;
                     height: 100%;
-                    &:nth-child(1), &:nth-child(11){
-                        width: 15.384615385% !important;
-                    }
-                }
-            }
-            &:nth-child(2), &:nth-child(4){
-                width: 15.384615385%;
-                height: 69.23076923%;
-                flex-direction: column;
-                div{
-                    width: 100%;
-                    height: 100%;
+                    background-color: yellow;
                 }
             }
         }
-        div.primary {
-            width: 69.23076923%;
-            height: 69.23076923%;
-            background-image: linear-gradient(to bottom, #257dc6, #65b2f2, #257dc6);
+        div.center {
+            display: flex;
+            width: 100%;
+            height: 60%;
+            section {
+                display: flex;
+                flex-direction: column;
+                width: 15%;
+                height: 100%;
+                justify-content: space-between;
+                div {
+                    width: 100% !important;
+                    height: 100% !important;
+                    background-color: red;
+                }
+            }
+            div.primary {
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(to bottom, #257dc6, #65b2f2, #257dc6);
+            }
         }
     }
 `

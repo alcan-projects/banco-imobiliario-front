@@ -12,9 +12,13 @@ import { BaseStyled } from '../src/styles/home'
 
 // class
 import { Board } from '../src/module/board'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const Home: NextPage = () => {
+  const [players, setPlayers] = useState([
+    ['Leodeyison'],
+    ['zeck', 'Pedrin']
+  ])
 
   useEffect(() => {
     new Board().test()
@@ -29,13 +33,16 @@ const Home: NextPage = () => {
             background='home'
             icon={"ok"}
             price="$12.120"
-            title='Casa são joão'
+            title='Casa são joão e talso'
+            home={[0, 0, 0]}
+            players={players[0]}
           />
           <BoxElement
             background='work'
             icon={"ok"}
             price="$12.120"
             title='Casa são joão'
+            players={players[1]}
           />
           <BoxElement
             background='agricultura'
@@ -54,6 +61,26 @@ const Home: NextPage = () => {
             icon={"ok"}
             price="$12.120"
             title='Casa são joão'
+            home={[0, 0, 0]}
+          />
+          <BoxElement
+            background='home'
+            icon={"ok"}
+            price="$12.120"
+            title='Casa são joão'
+          />
+          <BoxElement
+            background='home'
+            icon={"ok"}
+            price="$12.120"
+            title='Casa são joão'
+          />
+          <BoxElement
+            background='home'
+            icon={"ok"}
+            price="$12.120"
+            title='Casa são joão'
+            home={[0, 0, 0]}
           />
           <BoxElement
             background='home'
@@ -78,38 +105,91 @@ const Home: NextPage = () => {
             icon={"ok"}
             price="$12.120"
             title='Casa são joão'
+            home={[0, 0, 0]}
           />
           <BoxTopRight />
         </section>
-        
-        <section>
-          <div>Casa 1a</div>
-          <div>Casa 2a</div>
-          <div>Casa 3a</div>
-          <div>Casa 4a</div>
-          <div>Casa 5a</div>
-          <div>Casa 6a</div>
-          <div>Casa 7a</div>
-          <div>Casa 8a</div>
-          <div>Casa 9a</div>
-        </section>
-        
-
-        <div className='primary'>
-          Banco imobiliário
+        <div className='center'>
+          <section>
+            <BoxElement
+              background='home'
+              icon={"ok"}
+              price="$12.120"
+              title='Casa são joão'
+              angle='left'
+            />
+            <BoxElement
+              background='home'
+              icon={"ok"}
+              price="$12.120"
+              title='Casa são joão'
+              angle='left'
+            />
+            <BoxElement
+              background='home'
+              icon={"ok"}
+              price="$12.120"
+              title='Casa são joão'
+              home={[0, 0, 0]}
+              angle='left'
+            />
+            <BoxElement
+              background='home'
+              icon={"ok"}
+              price="$12.120"
+              title='Casa são joão'
+              angle='left'
+            />
+            <BoxElement
+              background='home'
+              icon={"ok"}
+              price="$12.120"
+              title='Casa são joão'
+              angle='left'
+            />
+          </section>
+          <div className='primary'>
+            Banco imobiliário
+          </div>
+          <section>
+            <BoxElement
+              background='home'
+              icon={"ok"}
+              price="$12.120"
+              title='Casa são joão'
+              angle='rigth'
+            />
+            <BoxElement
+              background='home'
+              icon={"ok"}
+              price="$12.120"
+              title='Casa são joão'
+              angle='rigth'
+            />
+            <BoxElement
+              background='home'
+              icon={"ok"}
+              price="$12.120"
+              title='Casa são joão'
+              home={[0, 0, 0]}
+              angle='rigth'
+            />
+            <BoxElement
+              background='home'
+              icon={"ok"}
+              price="$12.120"
+              title='Casa são joão'
+              angle='rigth'
+            />
+            <BoxElement
+              background='home'
+              icon={"ok"}
+              price="$12.120"
+              title='Casa são joão'
+              angle='rigth'
+            />
+          </section>
         </div>
-        <section>
-          <div>Casa 1b</div>
-          <div>Casa 2b</div>
-          <div>Casa 3b</div>
-          <div>Casa 4b</div>
-          <div>Casa 5b</div>
-          <div>Casa 6b</div>
-          <div>Casa 7b</div>
-          <div>Casa 8b</div>
-          <div>Casa 9b</div>
-        </section>
-
         <section>
           <BoxBottomLeft/>
           <BoxElement
@@ -129,6 +209,7 @@ const Home: NextPage = () => {
             icon={"ok"}
             price="$12.120"
             title='Orta seu joão'
+            home={[0, 0, 0]}
           />
           <BoxElement
             background='home'
@@ -153,6 +234,25 @@ const Home: NextPage = () => {
             icon={"ok"}
             price="$12.120"
             title='Casa são joão'
+          />
+          <BoxElement
+            background='home'
+            icon={"ok"}
+            price="$12.120"
+            title='Casa são joão'
+          />
+          <BoxElement
+            background='home'
+            icon={"ok"}
+            price="$12.120"
+            title='Casa são joão'
+          />
+          <BoxElement
+            background='home'
+            icon={"ok"}
+            price="$12.120"
+            title='Casa são joão'
+            home={[0, 0, 0]}
           />
           <BoxElement
             background='home'

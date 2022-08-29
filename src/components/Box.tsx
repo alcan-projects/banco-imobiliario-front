@@ -9,15 +9,26 @@ type backgroundType = "home" | "work" | "agricultura"
 type backgroundReturnType = "blue" | "red" | "green"
 type BoxElementType = {
     title: string,
+    angle?: 'left' | 'rigth'
     icon: any,
     price: string,
     background: backgroundType
-    position?: string
+    position?: string,
+    home?: Array<number>,
+    players?: Array<string>
 }
 
 import Home01 from '../../public/home01.png'
 
-const BoxElement: NextPage<BoxElementType> = ({ icon, price, title, background }) => {
+const BoxElement: NextPage<BoxElementType> = ({ 
+    icon, 
+    angle,
+    price, 
+    title, 
+    background,
+    home,
+    players
+}) => {
     function backgroundFunc(value: backgroundType): backgroundReturnType{
         var color: backgroundReturnType = 'home';
         color = value === "home" ? "blue" : color;
@@ -27,30 +38,57 @@ const BoxElement: NextPage<BoxElementType> = ({ icon, price, title, background }
     }
 
     return (
-        <BoxElementStyled bColor={backgroundFunc(background)}>
-            <strong>{title}</strong>
-            <section className="images">
-                <Image 
-                    src={Home01} 
-                    alt="home"
-                />
-                <Image 
-                    src={Home01} 
-                    alt="home"
-                />
-                <Image 
-                    src={Home01} 
-                    alt="home"
-                />
-                
-            </section>
-            <section className="players">
-                <span></span>
-                <span></span>
-            </section>
-            
-            <p>{price}</p>
-        </BoxElementStyled>
+        <>
+            {
+                angle === 'left' && (
+                    <p>Left</p>
+                )
+            }
+            {
+                angle === 'rigth' && (
+                    <p>Rigth</p>
+                )
+            }
+            {
+                !angle && (
+                    <BoxElementStyled bColor={backgroundFunc(background)}>
+                        <strong>{title}</strong>
+                        {
+                            home && (
+                                <section className="images">
+                                    {
+                                        home.map((item, index) => (
+                                            item === 0 && (
+                                                <Image
+                                                    key={index} 
+                                                    src={Home01} 
+                                                    alt="home"
+                                                />
+                                            )
+                                        ))
+                                    }
+                                </section>
+                            )
+                        }
+                        {
+                            players && (
+                                <section className="players">
+                                    {
+                                        players.map((play, index) => (
+                                            <span 
+                                                title={play}
+                                                key={index}
+                                            ></span>
+                                        ))
+                                    }
+                                </section>
+                            )
+                        }
+                        <p>{price}</p>
+                    </BoxElementStyled>
+                )
+            }
+        </>
     )
 }
 

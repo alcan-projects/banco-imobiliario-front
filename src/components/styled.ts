@@ -44,16 +44,13 @@ export const BoxElementStyled = styled('div')<BoxElementStyledType>`
     section.images {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
         height: 100% !important;
         span {
-            height: 40% !important;
-            width: 40% !important;
             img {
-                height: 100% !important;
-                width: 100% !important;
+                height: 30px !important;
+                width: 30px !important;
                 min-width: auto !important;
             }
         }
