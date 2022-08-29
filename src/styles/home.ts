@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const BaseStyled = styled('div')`
     display: flex;
-    justify-content: center;
     background-color: #000;
     div.primary {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         height: 100vh;
-        width: 57%;
+        width: 100%;
         background-color: #f9f9f9;
         section {
             display: flex;
