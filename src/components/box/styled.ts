@@ -16,12 +16,12 @@ export const BoxElementStyled = styled('div')<BoxElementStyledType>`
     });
     background-image: linear-gradient(${
         props => props.bColor === "red" && `
-            to bottom, #c90000, #c90000, #c90000
+            to bottom, #c90000, #a10404, #c90000
         `
     });
     background-image: linear-gradient(${
         props => props.bColor === "green" && `
-            to bottom, #09ee09, #09ee09, #09ee09
+            to bottom, #09d009, #098b09, #09d009
         `
     });
     justify-content: space-between;
@@ -48,6 +48,7 @@ export const BoxElementStyled = styled('div')<BoxElementStyledType>`
         align-items: center !important;
         height: 100% !important;
         span {
+            margin: 1px !important;
             img {
                 height: 30px !important;
                 width: 30px !important;

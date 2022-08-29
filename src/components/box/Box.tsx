@@ -14,11 +14,13 @@ type BoxElementType = {
     price: string,
     background: backgroundType
     position?: string,
-    home?: Array<number>,
+    home?: [number, number, number, number],
     players?: Array<string>
 }
 
-import Home01 from '../../public/home01.png'
+// icones
+import Plata from '../../../public/planta.png'
+import Home from '../../../public/casa.png'
 
 const BoxElement: NextPage<BoxElementType> = ({ 
     icon, 
@@ -58,13 +60,18 @@ const BoxElement: NextPage<BoxElementType> = ({
                                 <section className="images">
                                     {
                                         home.map((item, index) => (
-                                            item === 0 && (
-                                                <Image
-                                                    key={index} 
-                                                    src={Home01} 
-                                                    alt="home"
-                                                />
-                                            )
+                                            <>
+                                                {
+                                                    item === 0 && (
+                                                        <Image key={index} src={Plata} alt="planta"/>
+                                                    )
+                                                }
+                                                {
+                                                    item === 1 && (
+                                                        <Image key={index} src={Home} alt="home"/>
+                                                    )
+                                                }
+                                            </>
                                         ))
                                     }
                                 </section>
